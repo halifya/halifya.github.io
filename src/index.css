@@ -6,3 +6,7 @@
     font-family: space;
     src: url("/fonts/SpaceMono-Regular.ttf");
 }
+
+.custom-timeline-connector {
+    font-family: "Space Mono", monospace;
+  }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Profile from "./components/ProfileGit";
-import Skills from "./components/Skill";
+import Experience from "./components/Experience";
 import Searchbar from "./components/Searchbar";
 import Loader from "./components/Loader";
 function App() {
@@ -115,18 +115,18 @@ function App() {
             className="xs:w-5/6 w-11/12 600:w-100 sm:w-110 lg:w-120 "
             // sx={{ display: { xs: "none", sm: "block" } }}
           >
-            <Skills
+            <Experience
               input={input}
               user={user.username}
               profile={profile}
               dark={theme}
             />
-            <Profile
+            {/* <Profile
               input={input}
               user={user.username}
               profile={profile}
               dark={theme}
-            />
+            /> */}
           </div>
         </>
       )}

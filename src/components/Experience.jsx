@@ -1,6 +1,6 @@
 import BasicTimeline from "./Timeline";
 
-export default function Skills(prop) {
+export default function Experience(prop) {
   const date = new Date(prop.profile.created_at); //convert date prop to object
   const newDate = date
     .toLocaleDateString("en-GB", {
@@ -110,15 +110,16 @@ export default function Skills(prop) {
           </div> */}
           <div className="flex flex-col mt-4">
             <p
+              
               className={`${
                 prop.dark ? "text-white" : "text-gray"
-              } text-xs 480:text-base`}
+              } text-xs 480:text-base pt-6`}
             >
               EXPERIENCE
             </p>
           </div>
           <div
-            className={`flex mr-4 justify-around mt-8 480:-ml-12 rounded-xl py-4 lg:ml-0 ${
+            className={`flex-none mr-4 justify-around mt-8 480:-ml-12 rounded-xl py-4 lg:ml-0 ${
               prop.dark ? "bg-dark-navy-blue" : "bg-whitish-blue"
             }`}
           >
